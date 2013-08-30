@@ -1,0 +1,31 @@
+% \documentclass{aastex}
+\documentclass[iop]{emulateapj}
+\newcommand{\myshorttitle}{Short Title}
+\newcommand{\myshortauthors}{Short Authors}
+\input{preamble.tex}
+\input{defs.tex}
+\shorttitle{\myshorttitle}
+\shortauthors{\myshortauthors}
+\begin{document}
+\slugcomment{Comment}
+\title{Full Title}
+\author{Author}
+\affil{Affil.}
+\email{email}
+\and
+\author{Last Author}
+\affil{Affil.}
+
+\begin{abstract}
+\input{abstract.tex}
+\end{abstract}
+% \keywords{methods: observational, techniques: photometric}
+
+\section{Introduction}
+\label{sec:intro}
+
+\bigskip Acknowledgements. 
+% {\it Facilities:} \facility{CFHT (WIRCam)}, \facility{FLWO:2MASS}.
+
+\bibliography{master}
+\end{document}
