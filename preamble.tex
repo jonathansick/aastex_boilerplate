@@ -1,14 +1,32 @@
 % Preamble code
 \usepackage[utf8]{inputenc}
+
+% AAS
 \usepackage{apjfonts}
 \usepackage{multirow}
+
+% Graphics
 \usepackage{graphicx}
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{epstopdf}
+
+% Math
 \usepackage{amssymb}
 \usepackage{amsmath}
+
+% PDFs and clickable links
 \usepackage[pdfauthor={\myshortauthors},pdftitle={\myshorttitle},colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 \usepackage{url}
+
+% FiXme support
+\usepackage{xkvltxp}
+% \usepackage[layout={inline}]{fixme}  % Inline note style
+\usepackage{pdfcomment}
+\usepackage[layout={pdfcnote},singleuser]{fixme}  % PDF note style
+% For collaborative mode change singleuser to multiuser
+% \FXRegisterAuthor{js}{ajs}{JS}  # Adding an annotation user
+
+% Bibliography
 \usepackage{natbib}
 \bibliographystyle{apj}
