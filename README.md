@@ -2,17 +2,25 @@
 
 This is a simple project to help you start writing your paper.
 
-## Notes
+## Bootstrap your paper
 
-1. Feel free to customize the name of the paper from `article.tex`. Just change the `ROOT` variable in the `Makefile`.
-2. I've stuffed the preamble into `preamble.tex`, and macro definitions into `defs.tex`. Add your macros to `defs.tex`.
-3. I'm using the [vc](http://www.ctan.org/tex-archive/support/vc) version control bundle to print `git` SHA1s, authors and emails into the `slugcommit` in early drafts.
+1. [Download a zip](https://github.com/jonathansick/aastex_boilerplate/archive/master.zip) of this repository to start your paper from. Name and place the directory as you please.
+2. Customize the name of the root paper file from `article.tex`. Change the file name, then the `ROOT` variable in the `Makefile`.
+3. Make your paper a git repository!
 
-   To disable this: edit the make file to not depend on `vc.tex`. Also modify the line with `\slugcomment` in `article.tex` to be more useful for you.
+   git init .
+   git add *
+   git commit -am "Starting a new paper."
 
-   Once the article is submitted, replace the line starting with `\InputIfFileExists...` in `article.tex` with a direct `\slugcomment{...}` statement.
+4. I've stuffed the preamble into `preamble.tex`, and macro definitions into `defs.tex`. Add your macros to `defs.tex`.
+5. (optional) Register yourself as an author for the annotation system. See the *Collaborative Annotations* section below.
+6. Run `make` to ensure everything is hooked up.
 
-4. When the article is being prepared for submission, inputs need to be flattened. The [Astropysics](http://pythonhosted.org/Astropysics/) package can help with this.
+*As a fun bonus*, you can install my [`watcher.py` script](https://gist.github.com/jonathansick/3594679) to call the `Makefile` whenever you edit the source.
+
+    watcher.py article.tex
+
+When the article is being prepared for submission, inputs need to be flattened. The [Astropysics](http://pythonhosted.org/Astropysics/) package can help with this.
 
 ## Features
 
@@ -22,6 +30,14 @@ You can quickly get a tex-savvy word count from `make`, powered by [texcount](ht
 Just run:
 
     make wc
+
+### Version Control Tagging in PDFs
+
+I'm using the [vc](http://www.ctan.org/tex-archive/support/vc) version control bundle to print `git` SHA1s, authors and emails into the `slugcommit` in early drafts. *This means I'm expecting you to use git to track your paper.*
+
+To disable this: edit the make file to not depend on `vc.tex`. Also modify the line with `\slugcomment` in `article.tex` to be more useful for you.
+
+Once the article is submitted, replace the line starting with `\InputIfFileExists...` in `article.tex` with a direct `\slugcomment{...}` statement.
 
 ### Collaborative Annotations
 
@@ -49,4 +65,5 @@ To hide annotations in the document you release, simply change the `\documentcla
 
 ***
 
-Put together by Jonathan Sick, [@jonathansick](http://www.github.com/jonathansick) AASTeX-Boilerplate is licensed [CC-BY](http://creativecommons.org/licenses/by/3.0/deed.en_US).
+Put together by Jonathan Sick, [@jonathansick](http://www.github.com/jonathansick).
+AASTeX-Boilerplate is licensed [CC-BY](http://creativecommons.org/licenses/by/3.0/deed.en_US).
