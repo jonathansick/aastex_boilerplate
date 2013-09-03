@@ -47,6 +47,6 @@ By registering 'JS', that author can now write `\jsnote` and `\ajsnote` statemen
 
 To hide annotations in the document you release, simply change the `\documentclass` status from `draft` to `final` at the top of `article.tex`.
 
-****
+***
 
-Put together by Jonathan Sick, @jonathansick
+Put together by Jonathan Sick, [@jonathansick](http://www.github.com/jonathansick) AASTeX-Boilerplate is licensed [CC-BY](http://creativecommons.org/licenses/by/3.0/deed.en_US).
