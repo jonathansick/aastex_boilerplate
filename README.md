@@ -6,15 +6,12 @@ This is a simple project to help you start writing your paper.
 
 1. [Download a zip](https://github.com/jonathansick/aastex_boilerplate/archive/master.zip) of this repository to start your paper from. Name and place the directory as you please.
 2. Customize the name of the root paper file from `article.tex`. Change the file name, then the `ROOT` variable in the `Makefile`.
-3. Make your paper a git repository!
-
-   git init .
-   git add *
-   git commit -am "Starting a new paper."
-
+3. Make your paper a git repository! `git init .` and so on.
 4. I've stuffed the preamble into `preamble.tex`, and macro definitions into `defs.tex`. Add your macros to `defs.tex`.
-5. (optional) Register yourself as an author for the annotation system. See the *Collaborative Annotations* section below.
-6. Run `make` to ensure everything is hooked up.
+5. Change `\bibliography{...}` at the bottom of `article.tex` to point to your BibTeX repository. *You use BibTeX, don't you?*. If you link your bibliography into
+your tex installation directory (`~/Library/texmf/bibtex/bib/` on a Mac with [MacTeX](http://tug.org/mactex/)) you don't need to specify the full path.
+6. (optional) Register yourself as an author for the annotation system. See the *Collaborative Annotations* section below.
+7. Run `make` to ensure everything is hooked up.
 
 *As a fun bonus*, you can install my [`watcher.py` script](https://gist.github.com/jonathansick/3594679) to call the `Makefile` whenever you edit the source.
 
