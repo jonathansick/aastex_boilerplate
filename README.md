@@ -14,7 +14,16 @@ This is a simple project to help you start writing your paper.
 
 4. When the article is being prepared for submission, inputs need to be flattened. The [Astropysics](http://pythonhosted.org/Astropysics/) package can help with this.
 
-## Collaborative Annotations
+## Features
+
+### Word Counts
+
+You can quickly get a tex-savvy word count from `make`, powered by [texcount](http://app.uio.no/ifi/texcount/).
+Just run:
+
+    make wc
+
+### Collaborative Annotations
 
 We're using the [FixMe](http://www.ctan.org/pkg/fixme) package to handing TODOs, comments, and other annotations.
 By default the comments are added as PDF comment objects, but can also be written as inline text.

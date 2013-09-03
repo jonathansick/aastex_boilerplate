@@ -1,3 +1,4 @@
+# Root is the name (without extension) of main tex document
 ROOT=article
 
 all: $(ROOT).pdf
@@ -17,3 +18,7 @@ clean:
 	rm $(ROOT).out
 	rm $(ROOT)Notes.bib
 	rm vc.tex
+
+# Word count
+wc:
+	texcount -q $(ROOT).tex
