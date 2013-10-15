@@ -6,7 +6,7 @@ all: $(ROOT).pdf
 vc.tex:
 	./vc
 
-$(ROOT).pdf: $(ROOT).tex vc.tex
+$(ROOT).pdf: *.tex
 	latexmk -f -pdf -bibtex-cond $(ROOT).tex
 
 clean:
