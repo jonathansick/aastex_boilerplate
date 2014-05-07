@@ -19,12 +19,17 @@
 \usepackage[pdfauthor={\myshortauthors},pdftitle={\myshorttitle},colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 \usepackage{url}
 
-% FiXme support
+% FiXme support. See its documentation for how to make cool annotations
 \usepackage{xkvltxp}
-% \usepackage[layout={inline}]{fixme}  % Inline note style
 \usepackage{pdfcomment}
-\usepackage[layout={pdfcnote},singleuser]{fixme}  % PDF note style
 % For collaborative mode change singleuser to multiuser
+\usepackage[draft,layout={inline},singleuser]{fixme}
+\fxusetheme{color}
+\fxsetface{inline}{\ttfamily}
+\definecolor{fxnote}{rgb}{0.803921569, 0.290196078, 0.290196078} % #cd4a4a
+\definecolor{fxwarning}{rgb}{0.329411765, 0.254901961, 0.701960784}  % #5441b3
+\definecolor{fxerror}{rgb}{0.254901961, 0.701960784, 0.254901961} % #41b341
+\definecolor{fxfatal}{rgb}{1.0, 0.509803922, 0.262745098}  % #ff8243
 % \FXRegisterAuthor{js}{ajs}{JS}  # Adding an annotation user
 
 % Bibliography
